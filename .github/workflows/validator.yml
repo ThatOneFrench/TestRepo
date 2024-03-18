@@ -25,6 +25,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+      - printing working diretory
+        working-directory: Json-Validator
+        run: pwd
       - name: Run JSON validator
         working-directory: Json-Validator
         run: node json-validator.js
