@@ -26,4 +26,5 @@ jobs:
         with:
           node-version: '18'
       - name: Run JSON validator
+        working-directory: Json-Validator
         run: node json-validator.js
